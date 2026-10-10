@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: rgb(239, 137, 109);              /* ye global variable hai*/
+            --secondcolor: rgb(184, 129, 129);
+    
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--secondcolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul li:first-child{
+            --color: rgb(144, 243, 86);      /* ye local variable hai*/ 
+            background-color: var(--color);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Voluptatem neque officia magni ullam, quas corrupti commodi
+        labore! Corrupti nulla hic soluta, itaque maxime praesentium impedit,
+        ipsum porro sit minima fugiat consequatur assumenda animi earum 
+        reiciendis possimus? Nostrum est earum molestias magnam minus odio accusamus numquam!
+
+    </div>
+    
+</body>
+</html>

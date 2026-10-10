@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .header{
+            width: 1300px;
+            height: 55px;
+            background-color: palevioletred;
+            /* padding: 100px; */
+        position: fixed;
+}
+
+.parent {
+    background-color: green;
+    margin: 10px;
+    padding: 150px;
+    display: flex; /* दोनों चाइल्ड को साइड बाय साइड रखने के लिए */
+    justify-content: space-around; /* स्पेस के साथ बीच में रखें */
+    align-items: center; /* वर्टिकल सेंटर करने के लिए */
+}
+
+.child1 {
+    width: 400px; /* स्क्वेयर बनाने के लिए width = height */
+    height: 400px;
+    background-color: pink;
+    /* padding और positioning रिमूव की, फ्लेक्स से हैंडल होगा */
+}
+
+.child2 {
+    width: 400px; /* .child1 जैसा स्क्वेयर */
+    height: 400px;
+    background-color: blue; /* अलग कलर के लिए */
+}
+.text {
+    padding: 30px; /* स्पेसिंग के लिए */
+    border-radius: 10px; /* कर्व्ड कॉर्नर्स */
+    border: 2px solid purple; /* बॉर्डर दिखाने के लिए */
+    color: rgb(234, 140, 25); /* टेक्स्ट कलर */
+    background-color: #f0f0f0; /* बैकग्राउंड ऐड करके बेहतर दिखेगा, वैकल्पिक */
+    margin: 10px; /* बाहर स्पेस के लिए */
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    position: relative;
+    left: 1170px;
+    border-radius: 50px;
+    /* position: fixed; */
+
+}
+.footer{
+padding: 20px;
+background-color: antiquewhite;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+
+    <div class="text">
+       <p>Welcome to this sigma web development course</p> 
+    </div>
+
+    <div class="circle"></div>
+<div class="footer"></div>    
+</body>
+</html>

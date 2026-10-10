@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        :root {
+            --textcolor: rgb(231, 57, 9);
+            /* ye global variable hai*/
+            --backdcolor: rgb(201, 196, 140);
+            --thirdcolor: rgb(131, 209, 229);
+
+
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .box1 {
+            background-color: var(--thirdcolor);
+            color: var(--textcolor);
+            margin: 21px;
+            padding: 34px;
+
+            ul {
+                display: flex;
+
+            }
+
+            ul li {
+                list-style: none;
+                padding: 32px;
+
+            }
+        }
+
+            .box2 {
+                h1 {
+                    text-align: center;
+
+                    color: var(--thirdcolor);
+                    background-color: var(--textcolor);
+                    padding: 34px;
+                    margin: 23px;
+                }
+                h2{
+                    text-align: center;
+                    background-color: var(--backdcolor);
+                    color: var(--textcolor);
+                    padding: 34px;
+                    margin: 23px;
+
+
+                }
+            }
+            .box3{
+                p{
+                    color: var(--backdcolor);
+                    background-color: var(--thirdcolor);
+                    margin: 20px;
+                    padding: 45px;
+
+                }
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+
+    <div class="box2">
+        <h1>this is multicolor Website </h1>
+        <h2>using css variables</h2>
+    </div>
+    <div class="box3">
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas assumenda velit, quos eos magnam doloribus
+            sequi doloremque mollitia perspiciatis quam sunt quibusdam quae deserunt tempora aliquid! Animi rem sunt
+            libero labore amet soluta odio!</p>
+    </div>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+</body>
+
+</html>
